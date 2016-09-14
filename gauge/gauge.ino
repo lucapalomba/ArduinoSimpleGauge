@@ -15,8 +15,6 @@ void setup() {
 
 void loop() {
 
-  digitalWrite(enablePin, LOW);
-
   while (Serial.available() > 3) {
     //FIRST 3 BYTE IS SERVO DATA
     servodata[0] = Serial.read();
